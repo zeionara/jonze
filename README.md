@@ -13,6 +13,15 @@ Experiments did not reproduce improvements by SlotGated model over Basline model
 Preprocessing modules reused from following repo:
 https://github.com/MiuLab/SlotGated-SLU/
 
+## Usage
+To install package:  
+`pip install jonze`  
+To train model:  
+`from jonze import train  
+train(dataset = "joint-nlu", datasets_root = "dataset", models_root = "model", layer_size=12)`  
+To test model:  
+`from jonze import test  
+test(dataset = "joint-nlu", datasets_root = "dataset", models_root = "model", layer_size=12, batch_size=46)`  
 ## Results
 
 ### Snips Dataset:
