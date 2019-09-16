@@ -114,6 +114,7 @@ def train(dataset: str, number_of_epochs: int = 50, allow_early_stop: bool = Fal
                 print("EARLY BREAK")
                 break
 
+    manager.save()
     model.summary()
 
 def test(dataset: str, batch_size: int, datasets_root: str = DATASETS_ROOT, models_root: str = MODELS_ROOT, layer_size: int = 128):
